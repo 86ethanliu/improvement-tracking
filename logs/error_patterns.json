@@ -1,0 +1,45 @@
+{
+  "patterns": {
+    "a1b2c3d4e5f6": {
+      "error_type": "FileNotFoundError",
+      "frequency": 12,
+      "last_seen": "2026-03-09T15:30:00Z",
+      "first_seen": "2026-03-01T08:15:00Z",
+      "context": {
+        "path": "/tmp/missing_config.json",
+        "operation": "read",
+        "last_outcome": "fallback_to_default"
+      },
+      "recommended_action": "Pre-flight validation: check file existence before operations",
+      "pattern_hash": "a1b2c3d4e5f6"
+    },
+    "b2c3d4e5f6g7": {
+      "error_type": "ConnectionError",
+      "frequency": 8,
+      "last_seen": "2026-03-09T14:20:00Z",
+      "first_seen": "2026-03-05T10:00:00Z",
+      "context": {
+        "api": "github",
+        "operation": "fetch_commits",
+        "status_code": "timeout",
+        "last_outcome": "retry_success_after_2_attempts"
+      },
+      "recommended_action": "Enable retry with exponential backoff (3 attempts)",
+      "pattern_hash": "b2c3d4e5f6g7"
+    },
+    "c3d4e5f6g7h8": {
+      "error_type": "PermissionError",
+      "frequency": 5,
+      "last_seen": "2026-03-08T16:45:00Z",
+      "first_seen": "2026-03-07T12:30:00Z",
+      "context": {
+        "path": "/var/log/restricted.log",
+        "operation": "write",
+        "last_outcome": "fallback_to_temp_directory"
+      },
+      "recommended_action": "Verify file permissions and fallback to alternative location",
+      "pattern_hash": "c3d4e5f6g7h8"
+    }
+  },
+  "last_updated": "2026-03-09T16:00:00Z"
+}
