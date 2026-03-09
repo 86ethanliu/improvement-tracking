@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-03-09T00:30:00Z",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "name": "trello_api",
+      "status": "PASS",
+      "details": "Connected successfully as @ethanliu16",
+      "timestamp": "2026-03-09T00:30:01Z",
+      "duration_ms": 342
+    },
+    {
+      "name": "github_api",
+      "status": "PASS",
+      "details": "Repo accessible, branch: main",
+      "timestamp": "2026-03-09T00:30:02Z",
+      "duration_ms": 218
+    },
+    {
+      "name": "notion_api",
+      "status": "PASS",
+      "details": "Workspace accessible (user type: person)",
+      "timestamp": "2026-03-09T00:30:03Z",
+      "duration_ms": 289
+    },
+    {
+      "name": "trigger_freshness",
+      "status": "WARN",
+      "details": "No platform_health_*.json files found",
+      "timestamp": "2026-03-09T00:30:04Z",
+      "duration_ms": 12
+    },
+    {
+      "name": "workspace_activity",
+      "status": "PASS",
+      "details": "3 files modified in last 24h",
+      "timestamp": "2026-03-09T00:30:05Z",
+      "duration_ms": 8
+    }
+  ]
+}
